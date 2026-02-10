@@ -1,6 +1,6 @@
 function Certificates() {
   return (
-    <section className="certificates">
+    <section id = "experience" className="certificates">
       <h2 className="section-title reveal">Certifications</h2>
 
       <div className="certificates-list">

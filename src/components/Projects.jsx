@@ -1,6 +1,6 @@
 function Projects() {
   return (
-    <section className="projects">
+    <section  id = "projects" className="projects">
       <h2 className="section-title reveal">Projects</h2>
 
       <div className="projects-grid">

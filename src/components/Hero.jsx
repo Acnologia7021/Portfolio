@@ -2,7 +2,7 @@ import profile from '../assets/profile.png'
 
 function Hero() {
   return (
-    <section className="hero" id="hero">
+    <section id="hero" className="hero" >
     
       <div className="hero-content reveal">
         <h1>Arpit Yadav</h1>
