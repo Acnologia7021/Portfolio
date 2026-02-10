@@ -1,52 +1,73 @@
 function Projects() {
   return (
-    <section  id = "projects" className="projects">
+    <section id="projects" className="projects">
       <h2 className="section-title reveal">Projects</h2>
 
       <div className="projects-grid">
+
+        {/* Project 1 */}
         <div className="project-card reveal">
-          <h3>Workflow Automation Platform</h3>
+          <h3>Agentic AI Workflow Automation (n8n)</h3>
           <p className="project-desc">
-            Designed and automated multi-step workflows using event-driven
-            triggers, APIs, and conditional logic to reduce manual effort.
+            Built an agentic AI–driven automation system using n8n that
+            orchestrates multi-step workflows, integrates external APIs,
+            and executes actions based on dynamic decision logic.
           </p>
           <p className="project-tech">
-            n8n · REST APIs · JavaScript · Webhooks
+            n8n · JavaScript · REST APIs · Webhooks · Automation
           </p>
+          <a
+            href="https://github.com/Acnologia7021/N8n_Agentic_Ai"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="project-link"
+          >
+            View on GitHub →
+          </a>
         </div>
 
+        {/* Project 2 */}
         <div className="project-card reveal">
-          <h3>Intelligent Process Automation System</h3>
+          <h3>AI-Based News Research & Analysis System</h3>
           <p className="project-desc">
-            Built automation pipelines with rule-based and data-driven logic
-            to automatically route and execute repetitive processes.
+            Developed a news research pipeline that collects, processes,
+            and analyzes news articles to extract insights and trends
+            using NLP techniques.
           </p>
           <p className="project-tech">
-            Python · Workflow Orchestration · Automation Logic
+            Python · NLP · Data Analysis · Automation
           </p>
+          <a
+            href="https://github.com/Acnologia7021/News_Research"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="project-link"
+          >
+            View on GitHub →
+          </a>
         </div>
 
+        {/* Project 3 */}
         <div className="project-card reveal">
-          <h3>ML-Assisted Automation</h3>
+          <h3>Medicine Prescription Pattern Analyzer</h3>
           <p className="project-desc">
-            Integrated machine learning predictions into automation workflows
-            to enable data-driven decision making instead of static rules.
+            Designed an NLP-based system to analyze prescription data and
+            identify drug utilization patterns, supporting data-driven
+            insights in healthcare analytics.
           </p>
           <p className="project-tech">
-            Python · Pandas · Scikit-learn · Automation Pipelines
+            Python · NLP · Data Processing · Healthcare Analytics
           </p>
+          <a
+            href="https://github.com/Acnologia7021/Medicine-Prescription-Pattern-Analyzer-for-Drug-Utilization"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="project-link"
+          >
+            View on GitHub →
+          </a>
         </div>
 
-        <div className="project-card reveal">
-          <h3>System & Task Automation Tools</h3>
-          <p className="project-desc">
-            Developed small automation utilities to streamline repetitive
-            system-level tasks and improve operational reliability.
-          </p>
-          <p className="project-tech">
-            Python · Scripting · Task Scheduling
-          </p>
-        </div>
       </div>
     </section>
   )

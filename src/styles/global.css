@@ -359,6 +359,23 @@ html {
   font-size: 0.85rem;
   color: #9ca3af;
 }
+
+.project-link {
+  display: inline-block;
+  margin-top: 0.8rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #d2c7a1;
+  text-decoration: none;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.project-link:hover {
+  color: #ffffff;
+  transform: translateX(4px);
+}
+
+
 .experience {
   padding: 6rem 8%;
   position: relative;
