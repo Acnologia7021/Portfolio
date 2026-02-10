@@ -27,14 +27,14 @@ function Hero() {
 
         {/* Hero Links */}
         <div className="hero-links">
-          <a
+        <a
             href={`${import.meta.env.BASE_URL}Arpit_Yadav_CV.pdf`}
             className="hero-btn primary"
-            download
-            aria-label="Download Arpit Yadav CV"
-          >
+            target="_blank"
+            rel="noopener noreferrer">
             Download CV
-          </a>
+        </a>
+
 
           <a
             href="https://www.linkedin.com/in/arpit-yadav-0b6183244"
