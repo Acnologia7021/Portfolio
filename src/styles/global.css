@@ -609,3 +609,43 @@ html {
   }
 }
 
+.hero-links {
+  margin-top: 1.8rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.hero-btn {
+  padding: 0.7rem 1.4rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  backdrop-filter: blur(10px);
+}
+
+/* Primary: Download CV */
+.hero-btn.primary {
+  background: rgba(210, 199, 161, 0.18);
+  color: #f2f2f2;
+  box-shadow: 0 0 0 1px rgba(210, 199, 161, 0.35);
+}
+
+.hero-btn.primary:hover {
+  background: rgba(210, 199, 161, 0.28);
+  transform: translateY(-2px);
+}
+
+/* Secondary: LinkedIn */
+.hero-btn.secondary {
+  background: rgba(255, 255, 255, 0.05);
+  color: #d2c7a1;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.15);
+}
+
+.hero-btn.secondary:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+}

@@ -24,6 +24,26 @@ function Hero() {
         <p className="hero-cta">
           Scroll down to explore my skills, projects, and experience.
         </p>
+
+        {/* Hero Links */}
+        <div className="hero-links">
+          <a
+            href="/Arpit_Yadav_CV.pdf"
+            className="hero-btn primary"
+            download
+          >
+            Download CV
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/arpit-yadav-0b6183244"
+            className="hero-btn secondary"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn
+          </a>
+        </div>
       </div>
 
       <div className="hero-image">
