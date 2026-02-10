@@ -31,6 +31,7 @@ function Hero() {
             href={`${import.meta.env.BASE_URL}Arpit_Yadav_CV.pdf`}
             className="hero-btn primary"
             download
+            aria-label="Download Arpit Yadav CV"
           >
             Download CV
           </a>
@@ -40,6 +41,7 @@ function Hero() {
             className="hero-btn secondary"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Visit Arpit Yadav LinkedIn profile"
           >
             LinkedIn
           </a>
@@ -48,7 +50,11 @@ function Hero() {
 
       <div className="hero-image">
         <div className="image-circle">
-          <img src={profile} alt="Arpit Yadav" />
+          <img
+            src={profile}
+            alt="Arpit Yadav portrait"
+            loading="lazy"
+          />
         </div>
       </div>
 
