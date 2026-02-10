@@ -28,7 +28,7 @@ function Hero() {
         {/* Hero Links */}
         <div className="hero-links">
           <a
-            href="/Arpit_Yadav_CV.pdf"
+            href={`${import.meta.env.BASE_URL}Arpit_Yadav_CV.pdf`}
             className="hero-btn primary"
             download
           >
