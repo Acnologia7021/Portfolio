@@ -1,32 +1,38 @@
+import { Award } from 'lucide-react'
+
+const certificates = [
+  {
+    title: 'The Bits and Bytes of Computer Networking',
+    date: 'September 2024',
+  },
+  {
+    title: 'Introduction to Hardware and Operating Systems',
+    date: 'September 2024',
+  },
+  {
+    title: 'Machine Learning A-Z: Hands-On Python and R in Data Science',
+    date: 'August 2023',
+  },
+]
+
 function Certificates() {
   return (
-    <section id = "certificates" className="certificates">
-      <h2 className="section-title reveal">Certifications</h2>
+    <section id="certificates" className="section certificates">
+      <div className="section-heading reveal">
+        <p className="eyebrow">Certifications</p>
+        <h2>Structured learning beyond coursework.</h2>
+      </div>
 
       <div className="certificates-list">
-        <div className="certificate-card reveal">
-          <h3>Automation & Workflow</h3>
-          <ul>
-            <li>Workflow Automation with n8n</li>
-            <li>Robotic Process Automation Fundamentals</li>
-          </ul>
-        </div>
-
-        <div className="certificate-card reveal">
-          <h3>Machine Learning & Data</h3>
-          <ul>
-            <li>Foundations of Machine Learning</li>
-            <li>Data Analytics with Python</li>
-          </ul>
-        </div>
-
-        <div className="certificate-card reveal">
-          <h3>Programming & Computer Science</h3>
-          <ul>
-            <li>Python Programming</li>
-            <li>Java Programming</li>
-          </ul>
-        </div>
+        {certificates.map(certificate => (
+          <article className="certificate-card reveal" key={certificate.title}>
+            <div className="card-icon">
+              <Award size={22} />
+            </div>
+            <h3>{certificate.title}</h3>
+            <p>{certificate.date}</p>
+          </article>
+        ))}
       </div>
     </section>
   )
